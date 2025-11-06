@@ -51,7 +51,7 @@ const ContactGallery = () => {
       {/* Image 2 */}
       <div className="col-span-1 overflow-hidden rounded-2xl shadow-md">
         <img
-          src="https://images.unsplash.com/photo-1500534314209-a26db0f5d1e6?auto=format&fit=crop&w=900&q=80"
+          src="https://cdn.pixabay.com/photo/2023/02/16/15/55/trail-7794305_1280.jpg"
           alt="Trail Path"
           loading="lazy"
           className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 ease-out"
