@@ -42,7 +42,7 @@ const Nav = () => {
         </div>
 
 
-        <div className="md:hidden">
+        <div className="min-[1098px]:hidden">
           <button
             onClick={toggleMenu}
             className="text-gray-800 text-2xl focus:outline-none"

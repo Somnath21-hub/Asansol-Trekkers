@@ -114,7 +114,7 @@ const Gallery = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-screen flex flex-col items-center min-h-screen bg-gradient-to-b from-white to-[#f9f7f4] py-16 md:py-24 px-6 md:px-12 lg:px-20 overflow-hidden"
+      className="w-screen flex flex-col items-center min-h-screen bg-linear-to-b from-[#f5f2ec] to-[#f9f7f4]  py-16 md:py-24 px-6 md:px-12 lg:px-20 overflow-hidden mb-[6vh]"
     >
    
       <div className="text-center mb-16">
@@ -122,7 +122,7 @@ const Gallery = () => {
           Explore Our <span className="text-[#937A4B]">
            <TextType
             // texts={["Gallery", "Moments", "Adventures"]}
-
+           
             text={["Gallery", "Gallery", "Gallery"]}
             typingSpeed={60}
             pauseDuration={1500}
@@ -146,6 +146,7 @@ const Gallery = () => {
     
       <div className="w-[80%] h-fit">
         <Masonry
+        
           items={items}
           ease="power3.out"
           duration={0.6}

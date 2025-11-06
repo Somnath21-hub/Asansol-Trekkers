@@ -119,6 +119,7 @@ const Masonry = ({
 
   const hasMounted = useRef(false);
 
+  
   useLayoutEffect(() => {
     if (!imagesReady) return;
 
@@ -136,7 +137,8 @@ const Masonry = ({
             y: start.y,
             width: item.w,
             height: item.h,
-            ...(blurToFocus && { filter: 'blur(10px)' })
+            ...(blurToFocus && { filter: 'blur(10px)' }),
+
           },
           {
             opacity: 1,
@@ -144,15 +146,29 @@ const Masonry = ({
             ...(blurToFocus && { filter: 'blur(0px)' }),
             duration: 0.8,
             ease: 'power3.out',
-            delay: index * stagger
+            delay: index * stagger,
+            scrollTrigger: {
+              trigger: containerRef.current,
+              
+              pin: true,
+              
+      
+              markers: true,
+              
+              start: '-15%',
+              end: '-20%',
+              toggleActions: 'play none none reverse'
+            }
           }
         );
       } else {
         gsap.to(selector, {
           ...animProps,
           duration,
+        
           ease,
-          overwrite: 'auto'
+          overwrite: 'auto',
+         
         });
       }
     });
