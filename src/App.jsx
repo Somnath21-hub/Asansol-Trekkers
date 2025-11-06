@@ -10,7 +10,7 @@ import UpcomingEvent from './Section/UpcomingEvent';
 
 const App = () => {
   return (
-    <>
+    <div className='w-screen overflow-x-hidden flex flex-col'>
     <Nav />
     <Hero />
     <About />
@@ -20,7 +20,7 @@ const App = () => {
     <Gallery />
     <UpcomingEvent />
     <div className="h-screen w-screen bg-red-400"></div>
-    </>
+    </div>
   );
 };
 
