@@ -46,7 +46,7 @@ const Nav = () => {
             alt="Asansol Trekkers Logo"
             className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 object-contain"
           />
-          <h1 className="text-lg sm:text-xl md:text-2xl font-extrabold text-[#937A4B] tracking-wide">
+          <h1 className="text-lg sm:text-xl md:text-2xl font-extrabold text-[#937A4B] tracking-wide mx-5">
             Asansol Trekkers
           </h1>
         </div>

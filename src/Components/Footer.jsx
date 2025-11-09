@@ -39,7 +39,7 @@ function Footer() {
         {/* Logo + Description */}
         <div className="footer-section text-center sm:text-left">
           <h2 className="text-2xl font-bold mb-4 flex justify-center sm:justify-start items-center gap-2">
-            Asansol Trekkers <span>🌍</span>
+            Asansol Trekkers Club
           </h2>
           <p className="text-gray-500 mb-6 leading-relaxed text-sm md:text-base">
             Celebrating 25 years of crafting unforgettable, adventure,
@@ -62,13 +62,13 @@ function Footer() {
         <div className="footer-section text-center sm:text-left">
           <h3 className="text-xl font-semibold mb-4">Destinations</h3>
           <ul className="space-y-2 text-gray-600">
-            {["Himalayan", "Ladakh", "Sikkim", "Maharashtra", "Karnataka"].map(
+            {["Himalayan", "Ladakh", "Ayodhya", "Maharashtra", "Karnataka"].map(
               (place, i) => (
                 <li
                   key={i}
                   className="hover:text-yellow-500 transition-colors duration-300 cursor-pointer text-sm md:text-base"
                 >
-                  {place}
+                  <a href="#Destinations">{place}</a>
                 </li>
               )
             )}
@@ -79,16 +79,14 @@ function Footer() {
         <div className="footer-section text-center sm:text-left">
           <h3 className="text-xl font-semibold mb-4">Useful Links</h3>
           <ul className="space-y-2 text-gray-600">
-            {["Home", "About Us", "Events", "Gallery", "Contact Us"].map(
-              (link, i) => (
-                <li
-                  key={i}
-                  className="hover:text-yellow-500 transition-colors duration-300 cursor-pointer text-sm md:text-base"
-                >
-                  {link}
-                </li>
-              )
-            )}
+            {["Home", "About", "Event", "Gallery", "Contact"].map((link, i) => (
+              <li
+                key={i}
+                className="hover:text-yellow-500 transition-colors duration-300 cursor-pointer text-sm md:text-base"
+              >
+                <a href={`#${link}`}> {link}</a>
+              </li>
+            ))}
           </ul>
         </div>
 
