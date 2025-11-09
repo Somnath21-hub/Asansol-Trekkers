@@ -7,7 +7,7 @@ const Masonry = ({
   items,
   ease = "power3.out",
   duration = 0.6,
-  stagger = 0.1,
+  // stagger = 0.1,
   scaleOnHover = true,
   hoverScale = 0.97,
   colorShiftOnHover = false,

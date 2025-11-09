@@ -39,7 +39,7 @@ function Footer() {
         {/* Logo + Description */}
         <div className="footer-section text-center sm:text-left">
           <h2 className="text-2xl font-bold mb-4 flex justify-center sm:justify-start items-center gap-2">
-            Asansol Trekkers <span>🌍</span>
+            Asansol Trekkers Club
           </h2>
           <p className="text-gray-500 mb-6 leading-relaxed text-sm md:text-base">
             Celebrating 25 years of crafting unforgettable, adventure,
