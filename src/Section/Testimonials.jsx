@@ -10,26 +10,20 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Soumodweep Das",
-      role: "Community Founder",
+      role: "APEX CIRCLE KOLKATA (Founder)",
       message:
         "Being a beginner, I was nervous at first, but the Asansol Trekker Club team made everything easy and safe. The way they handle logistics and motivate you is impressive",
       image: sd,
     },
     {
       name: "Somnath Mukerjee",
-      role: "GDG Durgapur member",
+      role: "Google Developer Group Durgapur ",
       message:
         "Asansol Trekker made my first trek unforgettable! Super organized and very friendly team",
       image: somnath,
     },
 
-    {
-      name: "Anjali Tomar",
-      role: "Student",
-      message:
-        "I joined Asansol Trekker Club to escape my routine life — now it’s become part of my lifestyle. Every journey reminds me that happiness lies in the mountains and good company.",
-      image: "https://avatars.githubusercontent.com/u/160884550?v=4",
-    },
+  
   ];
 
   const [currentPage, setCurrentPage] = useState(0);

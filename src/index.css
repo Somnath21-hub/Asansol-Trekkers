@@ -1,17 +1,74 @@
 @import "tailwindcss";
 
+/* Prevent horizontal scroll */
 html {
-    width: 100vw;
-    overflow-x: hidden;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
+/* Scrollbar Styling */
 body::-webkit-scrollbar {
-    width: 8px;
-    background-color: #ffffff;
-
+  width: 8px;
+  background-color: #ffffff;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #937a4b;
-    border-radius: 7px;
+  background-color: #937a4b;
+  border-radius: 7px;
+}
+
+/* -----------------------------
+   🔥 Custom Animations
+----------------------------- */
+
+/* 🌈 Smooth Gradient Animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 300% 300%;
+  animation: gradientMove 6s ease infinite;
+}
+
+/* 🔄 Slow Rotation */
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 8s linear infinite;
+}
+
+/* ⬆ Soft Bounce Animation */
+@keyframes bounceSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 2s infinite;
+}
+
+/* 📊 Smooth Progress Bar Update */
+.animate-progress {
+  transition: width 0.2s ease;
 }
