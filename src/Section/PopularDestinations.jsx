@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import BaliPassTrek from "../assets/img10.jpg";
-import dighaCoastal from "../assets/Coastal.png";
+import dighaCoastal from "../assets/coastal.png";
 import beroHills from "../assets/beroHill.png";
 import ayodhyaHills from "../assets/ayodhyaHill.png";
 
