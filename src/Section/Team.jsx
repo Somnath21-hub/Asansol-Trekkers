@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import TourCard from "../Components/TourCard";
-import pinaki from "../assets/pinaki.jpg"; 
+import pinaki from "../assets/pinaki.jpg";
 
 const Team = () => {
   const trackRef = useRef(null);
@@ -16,7 +16,7 @@ const Team = () => {
     {
       image:
         "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80",
-      title: "Somnath Mukherjee",
+      title: "",
       label: "CEO",
     },
     {
@@ -91,7 +91,8 @@ const Team = () => {
         </h2>
 
         <p className="text-gray-600 mb-12 text-base sm:text-lg max-w-2xl mx-auto">
-          Passionate travel experts dedicated to making your adventures unforgettable.
+          Passionate travel experts dedicated to making your adventures
+          unforgettable.
         </p>
 
         <div className="relative w-[90%] sm:w-[85%] mx-auto">

@@ -39,9 +39,17 @@ const Hero = () => {
       {/* Background */}
       <img
         src={back}
-        alt="Hero Background"
-        className="absolute inset-0 w-full h-full object-cover object-center"
+        alt="Desktop Background"
+        className="absolute inset-0 w-full h-full object-cover object-center hidden sm:block"
       />
+
+      <img
+        src="https://images.pexels.com/photos/1365425/pexels-photo-1365425.jpeg?cs=srgb&dl=landscape-mountains-nature-1365425.jpg&fm=jpg"
+        alt="Mobile Background"
+        className="absolute inset-0 w-full h-full object-cover object-center sm:hidden"
+      />
+
+      {/* Optional overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Content */}

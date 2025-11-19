@@ -2,21 +2,29 @@ import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaQuoteLeft } from "react-icons/fa";
-
+import sd from "../assets/testimonials/SD.png";
+import somnath from "../assets/testimonials/somnath.jpeg";
 gsap.registerPlugin(ScrollTrigger);
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Somnath Mukherjee",
-      role: "B.Tech Student",
+      name: "Soumodweep Das",
+      role: "Community Founder",
       message:
         "Being a beginner, I was nervous at first, but the Asansol Trekker Club team made everything easy and safe. The way they handle logistics and motivate you is impressive",
-      image: "https://avatars.githubusercontent.com/u/176110876?v=4",
+      image: sd,
+    },
+    {
+      name: "Somnath Mukerjee",
+      role: "GDG Durgapur member",
+      message:
+        "Asansol Trekker made my first trek unforgettable! Super organized and very friendly team",
+      image: somnath,
     },
     {
       name: "Abshishek Gupta",
-      role: "Student",
+      role: "BCA Student",
       message:
         "Asansol Trekker Club gave me my first real taste of adventure! The team’s organization, safety, and energy were amazing. Every trek felt like a family trip filled with laughter and memories",
       image: "https://avatars.githubusercontent.com/u/122656682?v=4",
