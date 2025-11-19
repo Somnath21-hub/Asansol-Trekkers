@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PopularDestinations from "./Section/PopularDestinations";
 import Hero from "./Section/Hero";
 import Nav from "./Components/Nav";
@@ -11,8 +11,19 @@ import Footer from "./Components/Footer";
 import Team from "./Section/Team";
 import Contact from "./Section/Contact";
 import Testimonials from "./Section/Testimonials.jsx";
+import Loader from "./Components/Loader.jsx";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <>
       <Nav />
