@@ -22,13 +22,7 @@ const Testimonials = () => {
         "Asansol Trekker made my first trek unforgettable! Super organized and very friendly team",
       image: somnath,
     },
-    {
-      name: "Abshishek Gupta",
-      role: "BCA Student",
-      message:
-        "Asansol Trekker Club gave me my first real taste of adventure! The team’s organization, safety, and energy were amazing. Every trek felt like a family trip filled with laughter and memories",
-      image: "https://avatars.githubusercontent.com/u/122656682?v=4",
-    },
+
     {
       name: "Anjali Tomar",
       role: "Student",
