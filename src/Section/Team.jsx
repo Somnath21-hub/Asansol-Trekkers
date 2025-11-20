@@ -1,14 +1,23 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-
-import ashit from "../assets/AshitBanerjee.jpg";
-import pinaki from "../assets/pinaki.jpg";
-import debasish from "../assets/DebasishMaji.jpg";
-import goutam from "../assets/GoutamGhosh.jpg";
-import kalpataru from "../assets/KalpataruMukherjee.jpg";
-import kapardi from "../assets/KapardiMukherjee.jpg";
-import subhas from "../assets/SubhasChandraPaul.jpg";
+import ashit from "../assets/team/AshitBanerjee.jpg";
+import pinaki from "../assets/team/pinaki.jpg";
+import debasish from "../assets/team/DebasishMaji.jpg";
+import goutam from "../assets/team/GoutamGhosh.jpg";
+import kalpataru from "../assets/team/KalpataruMukherjee.jpg";
+import kapardi from "../assets/team/KapardiMukherjee.jpg";
+import subhas from "../assets/team/SubhasChandraPaul.jpg";
+import ShantanuBhowmik from "../assets/team/ShantanuBhowmik.jpeg";
+import MithunTalukdar from "../assets/team/MithunTalukdar.png";
+import AmitMukherjee from "../assets/team/AmitMukherjee.jpeg";
+import DhananjaySarkar from "../assets/team/DhananjaySarkar.jpeg";
+import DipankarMutsuddi from "../assets/team/DipankarMutsuddi.jpeg";
+import ArupChakraborty from "../assets/team/ArupChakraborty.jpeg";
+import AnindyaMukherjee from "../assets/team/AnindyaMukherjee.jpeg";
+import SouravDhibar from "../assets/team/SouravDhibar.jpeg";
+import SubarnaRoy from "../assets/team/SubarnaRoy.jpeg";
+import AmalRay from "../assets/team/AmalRay.png";
 
 const Team = () => {
   const trackRef = useRef(null);
@@ -41,6 +50,21 @@ const Team = () => {
       label: "Convenor",
     },
     {
+      image: ShantanuBhowmik,
+      title: "Shantanu Bhowmik",
+      label: "Guest Instructor",
+    },
+    {
+      image: SouravDhibar,
+      title: "Sourav Dhibar",
+      label: "Instructor",
+    },
+    {
+      image: MithunTalukdar,
+      title: "Mithun Talukdar",
+      label: "Instructor",
+    },
+    {
       image: kapardi,
       title: "Kapardi Mukherjee",
       label: "Member",
@@ -48,6 +72,42 @@ const Team = () => {
     {
       image: subhas,
       title: "Subhas Chandra Paul",
+      label: "Member",
+    },
+
+    {
+      image: AmitMukherjee,
+      title: "Amit Mukherjee",
+      label: "Member",
+    },
+    {
+      image: DhananjaySarkar,
+      title: "Dhananjay Sarkar",
+      label: "Member",
+    },
+    {
+      image: DipankarMutsuddi,
+      title: "Dipankar Mutsuddi",
+      label: "Member",
+    },
+    {
+      image: ArupChakraborty,
+      title: "Arup Chakraborty",
+      label: "Member",
+    },
+    {
+      image: AnindyaMukherjee,
+      title: "Anindya Mukerjee",
+      label: "Member",
+    },
+    {
+      image: SubarnaRoy,
+      title: "Subarana Roy",
+      label: "Member",
+    },
+    {
+      image: AmalRay,
+      title: "Amal Ray",
       label: "Member",
     },
   ];
@@ -62,7 +122,7 @@ const Team = () => {
 
     const animation = gsap.to(track, {
       x: `-=${totalWidth}`,
-      duration: 20,
+      duration: 50,
       ease: "none",
       repeat: -1,
       modifiers: {
@@ -97,11 +157,15 @@ const Team = () => {
         </h2>
 
         <p className="text-gray-600 mb-12 text-base sm:text-lg max-w-2xl mx-auto">
-          Passionate travel experts dedicated to making your adventures unforgettable.
+          Passionate travel experts dedicated to making your adventures
+          unforgettable.
         </p>
 
         <div className="relative w-[90%] sm:w-[85%] mx-auto">
-          <div ref={trackRef} className="flex items-center gap-8 sm:gap-10 w-max">
+          <div
+            ref={trackRef}
+            className="flex items-center gap-8 sm:gap-10 w-max"
+          >
             {teamMembers.map((member, index) => (
               <div
                 key={index}
@@ -117,7 +181,9 @@ const Team = () => {
                     <h3 className="text-xl font-semibold text-gray-800">
                       {member.title}
                     </h3>
-                    <p className="text-[#A2844E] mt-1 font-medium">{member.label}</p>
+                    <p className="text-[#A2844E] mt-1 font-medium">
+                      {member.label}
+                    </p>
                   </div>
                 </div>
               </div>
