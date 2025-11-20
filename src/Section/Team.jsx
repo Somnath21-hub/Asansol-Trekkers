@@ -1,7 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import TourCard from "../Components/TourCard";
+
+
+import ashit from "../assets/AshitBanerjee.jpg";
 import pinaki from "../assets/pinaki.jpg";
+import debasish from "../assets/DebasishMaji.jpg";
+import goutam from "../assets/GoutamGhosh.jpg";
+import kalpataru from "../assets/KalpataruMukherjee.jpg";
+import kapardi from "../assets/KapardiMukherjee.jpg";
+import subhas from "../assets/SubhasChandraPaul.jpg";
 
 const Team = () => {
   const trackRef = useRef(null);
@@ -11,44 +18,43 @@ const Team = () => {
     {
       image: pinaki,
       title: "Pinaki Ranjan Bannerjee",
-      label: "Founder & Lead Trekker",
+      label: "Secretary",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80",
-      title: "",
-      label: "CEO",
+      image: ashit,
+      title: "Ashit Banerjee",
+      label: "Founder Member",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1614289371518-90e85b33e2cf?auto=format&fit=crop&w=800&q=80",
-      title: "Emily Carter",
-      label: "Marketing Head",
+      image: debasish,
+      title: "Debasish Maji",
+      label: "Founder Member",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=800&q=80",
-      title: "Jessica Adams",
-      label: "Tour Manager",
+      image: goutam,
+      title: "Goutam Ghosh",
+      label: "Cashier",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1603415526960-f7e0328a8f3a?auto=format&fit=crop&w=800&q=80",
-      title: "Michael Lee",
-      label: "Travel Consultant",
+      image: kalpataru,
+      title: "Kalpataru Mukherjee",
+      label: "Convenor",
     },
     {
-      image:
-        "https://images.unsplash.com/photo-1614289299404-65f83a3c1193?auto=format&fit=crop&w=800&q=80",
-      title: "Olivia Brown",
-      label: "Operations",
+      image: kapardi,
+      title: "Kapardi Mukherjee",
+      label: "Member",
+    },
+    {
+      image: subhas,
+      title: "Subhas Chandra Paul",
+      label: "Member",
     },
   ];
 
   useEffect(() => {
     const track = trackRef.current;
 
-    // duplicate for seamless loop
     const clones = track.innerHTML;
     track.innerHTML += clones;
 
@@ -91,15 +97,11 @@ const Team = () => {
         </h2>
 
         <p className="text-gray-600 mb-12 text-base sm:text-lg max-w-2xl mx-auto">
-          Passionate travel experts dedicated to making your adventures
-          unforgettable.
+          Passionate travel experts dedicated to making your adventures unforgettable.
         </p>
 
         <div className="relative w-[90%] sm:w-[85%] mx-auto">
-          <div
-            ref={trackRef}
-            className="flex items-center gap-8 sm:gap-10 w-max"
-          >
+          <div ref={trackRef} className="flex items-center gap-8 sm:gap-10 w-max">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
@@ -115,9 +117,7 @@ const Team = () => {
                     <h3 className="text-xl font-semibold text-gray-800">
                       {member.title}
                     </h3>
-                    <p className="text-[#A2844E] mt-1 font-medium">
-                      {member.label}
-                    </p>
+                    <p className="text-[#A2844E] mt-1 font-medium">{member.label}</p>
                   </div>
                 </div>
               </div>
