@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaQuoteLeft } from "react-icons/fa";
 import sd from "../assets/testimonials/SD.png";
 import somnath from "../assets/testimonials/somnath.jpeg";
+import anjali from "../assets/testimonials/anjali.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const Testimonials = () => {
@@ -22,8 +23,13 @@ const Testimonials = () => {
         "Asansol Trekker made my first trek unforgettable! Super organized and very friendly team",
       image: somnath,
     },
-
-  
+    {
+      name: "Anjali Tomar",
+      role: "MERN Stack Developer",
+      message:
+        "Amazing experience — safe, scenic, and perfectly guided. Highly recommend Asansol Trekker!",
+      image: anjali,
+    },
   ];
 
   const [currentPage, setCurrentPage] = useState(0);
